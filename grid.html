@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contoh Grid</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: rgb(127, 127, 243);
+    }
+
+    .header {
+      background-color: rgb(127, 127, 243);
+      color: #131111;
+      height: 0px;
+      padding: 15px;
+    }
+    .header h1 {
+        padding-bottom: 5px;
+    }
+
+    .navbar {
+      background-color:rgb(127, 127, 243);
+      color: #050505;
+      height: 5px;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding-bottom: 5px;
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar li {
+      padding: 0 20px;
+    }
+
+    .navbar a {
+      color: #111010;
+      text-decoration: none;
+    }
+
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+
+    .navbar .button {
+      background-color: #01f722;
+      color: #fafcfc;
+      border: none;
+      padding: 10px 20px;
+      font-size: 14px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1 style="margin: 0;">Username</h1>
+  </div>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="Form_Login.html"><button class="button">Login</button></li>
+      <li><a href="Form_Registrasi.html"><button class="button">Registrasi</button></li>
+    </ul>
+  </nav>
+
+</body>
+<head>
+  <title>Grid Layout</title>
+  <style>
+    /* Gaya Dasar */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr; /* Membagi grid menjadi tiga kolom dengan lebar yang sama */
+      grid-gap: 20px; /* Jarak antara grid item */
+      padding: 20px;
+    }
+
+    .item {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+    <div class="item">Item 4</div>
+    <div class="item">Item 5</div>
+    <div class="item">Item 6</div>
+  </div>
+</body>
+
+</html>
